@@ -1,0 +1,80 @@
+/* components/LoadingScreen.module.css */
+.loadingScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease-out; /* Smooth opacity transition */
+}
+
+.loadingScreen.visible {
+  opacity: 1; /* Make loading screen visible */
+}
+
+.loadingText {
+  font-size: 10em;
+  color: white;
+  animation: slideInOut 3s forwards; /* Animation duration adjusted */
+  display: inline-block;
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  height:20px;
+  width:20px;
+  float:right;
+  margin:0 3px;
+  animation: bounce 0.8s ease-in-out forwards; /* Bounce animation */
+}
+
+.dot1 {
+  animation-delay: 1s; /* Delay for first dot */
+}
+
+.dot2 {
+  animation-delay: 0.5s; /* Delay for second dot */
+}
+
+.dot3 {
+  animation-delay: 0s; /* Delay for third dot */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Initial and final positions */
+  }
+  50% {
+    transform: translateY(-20px); /* Bounce height */
+  }
+}

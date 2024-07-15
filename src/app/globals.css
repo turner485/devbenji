@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
 
 @font-face {
   font-family: 'Pixel Digivolve';
@@ -40,7 +46,6 @@ body {
     text-wrap: balance;
   }
 }
-
 
 svg {
   width: 35px;

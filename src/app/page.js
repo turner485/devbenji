@@ -1,7 +1,5 @@
-import Image from "next/image";
-
-import Header from "./components/header";
-
+// page.js
+import Header from "./components/Header";
 
 export default function Home() {
   return (
