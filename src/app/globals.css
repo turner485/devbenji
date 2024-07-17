@@ -6,8 +6,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   height: 100%;
+  overflow: hidden;
 }
 
 @font-face {
@@ -32,6 +32,7 @@ body, html {
 }
 
 body {
+  font-family: 'courier-std', monospace!important;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -47,6 +48,52 @@ body {
   }
 }
 
-svg {
-  width: 35px;
+.git-hub-block ul, .work-experience {
+  max-height: 44.8rem;
+}
+
+.work-experience h4, .work-experience h3 {
+  font-size: 1.40rem;
+}
+
+.work-experience ul li {
+  list-style-type: square;
+  list-style: circle!important;
+}
+
+.work-experience ul {
+  list-style-type: square!important;
+}
+
+.work-experience p {
+  font-size: 1.05rem;
+}
+
+a {
+  cursor: pointer;
+}
+
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  color: #7395c0;
+  cursor: pointer;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #7395c0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

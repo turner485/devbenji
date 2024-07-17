@@ -4,17 +4,16 @@
 import React, { useEffect, useState } from 'react';
 import styles from './styles/loadingScreen.module.css';
 
-const LoadingScreen = ({ onComplete }) => {
+const LoadingScreen = () => {
     const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(false);
-            onComplete(); // Notify parent that loading is complete
-        }, 3000); // Duration for loading screen
+        }, 3000); // Simulating a 3-second loading time
 
-        return () => clearTimeout(timer);
-    }, [onComplete]);
+        return () => clearTimeout(timer); // Cleanup timer on unmount
+    }, []);
 
     return (
         <div className={`${styles.loadingScreen} ${isVisible ? styles.visible : ''}`}>
