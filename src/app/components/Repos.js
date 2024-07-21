@@ -38,10 +38,10 @@ const Repos = () => {
                 {repositories.map((repo) => (
                     <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
                         <li key={repo.id} className='rounded bg-slate-700 hover:bg-[#7395c0] ease-out duration-300 mb-6 px-6 pt-4 pb-4 min-h-48 relative'>
-                            <p className='text-2xl font-bold capitalize'>{repo.name.replace(/[-_]/g, ' ')}</p>
+                            <p className='text-xl font-bold capitalize'>{repo.name.replace(/[-_]/g, ' ')}</p>
                             <p className='text-base'>{repo.description}</p>
                             <div className='fa-wrapper fa-icon'>
-                                <FontAwesomeIcon icon={faGithub} className="text-6xl text-white absolute right-1 bottom-1" />
+                                <FontAwesomeIcon icon={faGithub} className="text-4xl text-white absolute right-1 bottom-1" />
                             </div>
                         </li>
                     </a>

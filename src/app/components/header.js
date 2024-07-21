@@ -11,8 +11,8 @@ const Header = () => {
         <div className='header'>
             <div className="flex justify-center">
                 <div className='w-2/3'>
-                    <div className='header-wrapper flex justify-between'>
-                        <div className="flex">
+                    <div className='header-wrapper flex justify-center md:justify-between'>
+                        <div className="flex justify-center">
                             <h2 className="text-4xl ml-2 mt-3" style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>
                                 //devbenji...
                             </h2>
@@ -21,11 +21,12 @@ const Header = () => {
                                 alt="Logo"
                                 width={50}
                                 height={30}
-                                className="ml-1 mt-[7px] rounded-full"
+                                className="ml-1 mt-[7px] rounded-full hidden md:flex"
                             />
                         </div>
 
-                        <div className="flex mt-3 space-x-3 mr-2">
+                        <div className="flex mt-3 space-x-3 mr-2 hidden md:flex">
+                            
                             <Link href="https://github.com/turner485" target="_blank" rel="noopener noreferrer" className='fa-icon'>
                                 <FontAwesomeIcon icon={faGithub} className="text-4xl text-white hover:text-[#7395c0] ease-out duration-300 mt-[4px]" />
                             </Link>

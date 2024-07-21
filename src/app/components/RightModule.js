@@ -13,17 +13,17 @@ const RightModule = () => {
     };
 
     return (
-        <div className='w-1/2 ml-6 mt-2'>
+        <div className='lg:w-1/2 lg:ml-6 mt-2 mt-4 lg:mt-0  text-center lg:text-left'>
             <div className="right-module">
                 <div className="menu-buttons mb-4 flex flex-col">
                     <div className='hover-underline-wrapper'>
-                        <a className={`mt-2 text-4xl ${activeMenu === 'github' ? ' text-white underline after:bg-slate-600' : 'hover-underline'}`} onClick={() => handleMenuChange('github')} style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>GitHub</a>
+                        <a className={`text-4xl ${activeMenu === 'github' ? ' text-white underline' : 'hover-underline'}`} onClick={() => handleMenuChange('github')} style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>GitHub</a>
                     </div>
-                    <div className='hover-underline-wrapper'>
-                        <a className={`mt-2 text-4xl ${activeMenu === 'work-experience' ? 'text-white underline' : 'hover-underline'}`} onClick={() => handleMenuChange('work-experience')} style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>Work Experience</a>
+                    <div className='hover-underline-wrapper mt-1'>
+                        <a className={`text-4xl ${activeMenu === 'work-experience' ? 'text-white underline' : 'hover-underline '}`} onClick={() => handleMenuChange('work-experience')} style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>Work Experience</a>
                     </div>
-                    <div className='hover-underline-wrapper'>
-                        <a className={`mt-2 text-4xl ${activeMenu === 'freelance' ? ' text-white underline' : 'hover-underline'}`} onClick={() => handleMenuChange('freelance')} style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>Freelance</a>
+                    <div className='hover-underline-wrapper mt-1'>
+                        <a className={`text-4xl ${activeMenu === 'freelance' ? ' text-white underline' : 'hover-underline'}`} onClick={() => handleMenuChange('freelance')} style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>Freelance</a>
                     </div>
                 </div>
 

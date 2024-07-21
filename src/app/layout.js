@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/ids8ffr.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
       <body className={inter.className}>
         <RootLayoutClient>

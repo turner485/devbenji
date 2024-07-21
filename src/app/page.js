@@ -8,9 +8,7 @@ export default function Home() {
     <main className="w-full">
       <Header />
       <div className="flex justify-center">
-
-      
-        <div className='w-2/3 flex mt-8'>
+        <div className='lg:w-2/3 flex lg:flex-row flex-col mt-2 md:mt-6 px-4'>
           <LeftModule />
           <RightModule />
         </div>
