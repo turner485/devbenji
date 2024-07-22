@@ -19,7 +19,6 @@ const Repos = () => {
 
                 setRepositories(sortedRepos);
                 setLoading(false);
-                console.log(repos);
             } catch (error) {
                 console.error('Error fetching repositories:', error);
             }
