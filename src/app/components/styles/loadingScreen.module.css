@@ -11,20 +11,30 @@
   width: 100%;
   z-index: 9999;
   opacity: 0;
-  transition: opacity 0.5s ease-out; /* Smooth opacity transition */
+  transition: opacity 0.5s ease-out;
+  /* Smooth opacity transition */
 }
-
 .loadingScreen.visible {
-  opacity: 1; /* Make loading screen visible */
+  opacity: 1;
+  /* Make loading screen visible */
 }
-
 .loadingText {
   font-size: 10em;
   color: white;
-  animation: slideInOut 3s forwards; /* Animation duration adjusted */
+  animation: slideInOut 3s forwards;
+  /* Animation duration adjusted */
   display: inline-block;
 }
-
+@media screen and (max-width: 1070px) {
+  .loadingText {
+    font-size: 5.25em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .loadingText {
+    font-size: 3.25em;
+  }
+}
 @keyframes slideInOut {
   0% {
     transform: translateX(-100%);
@@ -43,38 +53,59 @@
     opacity: 0;
   }
 }
-
 .dot-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .dot {
-  height:20px;
-  width:20px;
-  float:right;
-  margin:0 3px;
-  animation: bounce 0.8s ease-in-out forwards; /* Bounce animation */
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin: 0 3px;
+  animation: bounce 0.8s ease-in-out forwards;
+  /* Bounce animation */
 }
-
+@media screen and (max-width: 600px) {
+  .dot {
+    height: 5px;
+    width: 5px;
+    animation: bounceMobile 0.8s ease-in-out forwards;
+  }
+}
 .dot1 {
-  animation-delay: 1s; /* Delay for first dot */
+  animation-delay: 1s;
+  /* Delay for first dot */
 }
-
 .dot2 {
-  animation-delay: 0.5s; /* Delay for second dot */
+  animation-delay: 0.5s;
+  /* Delay for second dot */
 }
-
 .dot3 {
-  animation-delay: 0s; /* Delay for third dot */
+  animation-delay: 0s;
+  /* Delay for third dot */
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0); /* Initial and final positions */
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Initial and final positions */
   }
   50% {
-    transform: translateY(-20px); /* Bounce height */
+    transform: translateY(-20px);
+    /* Bounce height */
+  }
+}
+
+@keyframes bounceMobile {
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Initial and final positions */
+  }
+  50% {
+    transform: translateY(-10px);
+    /* Bounce height */
   }
 }

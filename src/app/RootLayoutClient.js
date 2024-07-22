@@ -1,4 +1,3 @@
-// RootLayoutClient.js
 "use client";
 
 import React, { useEffect, useState } from 'react';
@@ -9,13 +8,18 @@ const RootLayoutClient = ({ children }) => {
     const [showLoadingScreen, setShowLoadingScreen] = useState(true);
 
     useEffect(() => {
-        const loadTimer = setTimeout(() => {
+        // Simulate preloading or initialization here
+        const preloadContent = async () => {
+            // Simulate a delay for preloading content
+            await new Promise(resolve => setTimeout(resolve, 3100)); // 3-second preload time
             setIsLoaded(true);
-            setShowLoadingScreen(false);
-        }, 3000); // Simulating 3 seconds loading time
+            setShowLoadingScreen(false); // Hide loading screen after preload
+        };
+
+        preloadContent();
 
         return () => {
-            clearTimeout(loadTimer);
+            // Cleanup if needed
         };
     }, []);
 

@@ -14,7 +14,7 @@ const Header = () => {
                     <div className='header-wrapper flex justify-center md:justify-between'>
                         <div className="flex justify-center">
                             <h2 className="text-4xl ml-2 mt-3" style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>
-                                //devbenji...
+                                &#47;&#47;devbenji...
                             </h2>
                             <Image
                                 src="/images/Square_ben_v1.png"

@@ -11,12 +11,10 @@ const Repos = () => {
     useEffect(() => {
         const fetchRepositories = async () => {
             try {
-                const username = 'turner485'; // Replace with your GitHub username
+                const username = 'turner485'; 
                 const repos = await getUserRepositories(username);
-
-                // Sort repositories by creation date in ascending order
+      
                 const sortedRepos = repos.sort((start_of_time, most_recent) => new Date(most_recent.created_at) - new Date(start_of_time.created_at));
-                
 
                 setRepositories(sortedRepos);
                 setLoading(false);
@@ -36,8 +34,13 @@ const Repos = () => {
         <div className='git-hub-block'>
             <ul className='overflow-y-auto'>
                 {repositories.map((repo) => (
-                    <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                        <li key={repo.id} className='rounded bg-slate-700 hover:bg-[#7395c0] ease-out duration-300 mb-6 px-6 pt-4 pb-4 min-h-48 relative'>
+                    <a
+                        key={repo.id}
+                        href={repo.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <li className='rounded bg-slate-700 hover:bg-[#7395c0] ease-out duration-300 mb-6 px-6 pt-4 pb-4 min-h-48 relative'>
                             <p className='text-xl font-bold capitalize'>{repo.name.replace(/[-_]/g, ' ')}</p>
                             <p className='text-base'>{repo.description}</p>
                             <div className='fa-wrapper fa-icon'>
@@ -49,6 +52,7 @@ const Repos = () => {
             </ul>
         </div>
     );
+
 };
 
 export default Repos;
