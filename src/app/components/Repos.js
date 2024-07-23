@@ -44,7 +44,7 @@ const Repos = () => {
                         <li className='flex flex-col rounded bg-slate-700 hover:bg-[#7395c0] ease-out duration-300 mb-6 px-6 pt-4 pb-4 min-h-72 relative'>
                             <p className='text-xl font-bold capitalize'>{repo.name.replace(/[-_]/g, ' ')}</p>
                             <p className='text-base'>{repo.description}</p>
-                            <p className='created-at text-sm'>Created at: {repo.pushed_at.replace(/[TZ]/g, ' ')}</p>
+                            <p className='created-at text-sm'>Latest Activity: {repo.pushed_at.replace(/[TZ]/g, ' ')}</p>
                             <div className='fa-wrapper fa-icon'>
                                 <FontAwesomeIcon icon={faGithub} className="text-4xl text-white absolute right-1 bottom-1" />
                             </div>
