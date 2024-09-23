@@ -36,7 +36,7 @@ const Header = () => {
                             <Link href="https://www.twitch.tv/benjaminmcp0" className='fa-icon'>
                                 <FontAwesomeIcon icon={faTwitch} className="text-4xl text-white hover:text-[#6441a5] ease-out duration-300 mt-[7px]" />
                             </Link>
-                            <Link href="mailto:turner485@hotmail.co.uk" className='fa-icon'>
+                            <Link href="mailto:benjamin@devbenji.co.uk" className='fa-icon'>
                                 <FontAwesomeIcon icon={faEnvelope} className="text-4xl text-white hover:text-[#7395c0] ease-out duration-300 mt-1" />
                             </Link>
                         </div>
