@@ -33,7 +33,7 @@ const Header = () => {
                             <Link href="https://www.linkedin.com/in/benjaminturner11/" target="_blank" rel="noopener noreferrer" className='fa-icon'>
                                 <FontAwesomeIcon icon={faLinkedin} className="text-4xl text-white hover:text-[#0072b1] ease-out duration-300 mt-[5px]" />
                             </Link>
-                            <Link href="https://www.twitch.tv/benjaminmcp0" className='fa-icon'>
+                            <Link href="https://www.twitch.tv/benjaminmcp0tv" className='fa-icon'>
                                 <FontAwesomeIcon icon={faTwitch} className="text-4xl text-white hover:text-[#6441a5] ease-out duration-300 mt-[7px]" />
                             </Link>
                             <Link href="mailto:benjamin@devbenji.co.uk" className='fa-icon'>
