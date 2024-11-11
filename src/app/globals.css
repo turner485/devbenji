@@ -1,119 +1,102 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
 }
-
-
 @font-face {
-  font-family: 'Pixel Digivolve';
-  src: url('/fonts/pixel_digivolve-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Pixel Digivolve";
+	src: url("/fonts/pixel_digivolve-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
-
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
-
 body {
-  font-family: 'courier-std', monospace!important;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	font-family: "courier-std", monospace !important;
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
 }
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
-
-.git-hub-block ul, .work-experience {
-  max-height: 44.8rem;
+.git-hub-block ul,
+.work-experience {
+	max-height: 44.8rem;
 }
-
-.work-experience h4, .work-experience h3 {
-  font-size: 1.40rem;
+.work-experience h4,
+.work-experience h3 {
+	font-size: 1.4rem;
 }
-
 .work-experience ul li {
-  list-style-type: square;
-  list-style: circle!important;
+	list-style-type: square;
+	list-style: circle !important;
 }
-
 .work-experience ul {
-  list-style-type: square!important;
+	list-style-type: square !important;
 }
-
 .work-experience p {
-  font-size: 1.05rem;
+	font-size: 1.05rem;
 }
-
 a {
-  cursor: pointer;
+	cursor: pointer;
 }
-
 .hover-underline {
-  display: inline-block;
-  position: relative;
-  color: #7395c0;
-  cursor: pointer;
+	display: inline-block;
+	position: relative;
+	color: #7395c0;
+	cursor: pointer;
 }
-
 .hover-underline::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0px;
-  left: 0;
-  background-color: #7395c0;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0px;
+	left: 0;
+	background-color: #7395c0;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
 }
-
 .hover-underline:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+	transform: scaleX(1);
+	transform-origin: bottom left;
 }
-
 div.work-ex-block {
-  text-align: left;
+	text-align: left;
 }
-
 p.created-at {
-  margin-top: auto;
+	margin-top: auto;
 }
-
 ::-webkit-scrollbar {
-  width: 3px;
+	width: 3px;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+	background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #959595;
-  border-radius: 10px;
-  border: transparent;
+	background-color: #959595;
+	border-radius: 10px;
+	border: transparent;
 }
