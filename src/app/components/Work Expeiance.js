@@ -105,10 +105,10 @@ const WorkExperience = () => {
 					time, enhancing user experience.
 				</p>
 				<br />
-				<b>#5 Impex Python population | Python & Impex</b>
+				<b>#5 Impex Python population | Python & Impex</b> 
 				<p>
 					Streamlined the image export/import process from Photoshop
-					to CMS, saving 2-3 hours of manual work per project
+					to CMS, saving 2-3 hours of manual work per project.
 				</p>
 				<br />
 			</div>
