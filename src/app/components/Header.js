@@ -38,7 +38,7 @@ const Header = () => {
                             </Link>
                             <Link href="mailto:benjamin@devbenji.co.uk" className='fa-icon'>
                                 <FontAwesomeIcon icon={faEnvelope} className="text-4xl text-white hover:text-[#7395c0] ease-out duration-300 mt-1" />
-                            </Link>
+                            </Link> 
                         </div>
                     </div>
                 </div>
