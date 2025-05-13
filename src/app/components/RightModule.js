@@ -19,9 +19,9 @@ const RightModule = () => {
                     <div className='hover-underline-wrapper'>
                         <a className={`text-4xl ${activeMenu === 'github' ? ' text-white underline' : 'hover-underline'}`} onClick={() => handleMenuChange('github')} style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>GitHub</a>
                     </div>
-                    <div className='hover-underline-wrapper mt-1'>
+                    {/* <div className='hover-underline-wrapper mt-1'>
                         <a className={`text-4xl ${activeMenu === 'work-experience' ? 'text-white underline' : 'hover-underline '}`} onClick={() => handleMenuChange('work-experience')} style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>Work Experience</a>
-                    </div>
+                    </div> */}
                     <div className='hover-underline-wrapper mt-1'>
                         <a className={`text-4xl ${activeMenu === 'freelance' ? ' text-white underline' : 'hover-underline'}`} onClick={() => handleMenuChange('freelance')} style={{ fontFamily: 'Pixel Digivolve, sans-serif' }}>Freelance</a>
                     </div>
